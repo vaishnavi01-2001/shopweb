@@ -56,6 +56,7 @@ const Transactions = () => {
         const getTransactions = async ()=>{
             const list = await axios.get(`https://roxiler-backend-vijaykumars-projects.vercel.app/transactions?month=${selectedMonth}&page=${page}&search=${searchInput}&perPage=10`)
             // https://s3.amazonaws.com/roxiler.com/product_transaction.json
+            // const list = await axios.get(`http://localhost:8080/products-a`)
             if(list){
                 console.log(list)
                 setTransactionList(list.data.transactions)

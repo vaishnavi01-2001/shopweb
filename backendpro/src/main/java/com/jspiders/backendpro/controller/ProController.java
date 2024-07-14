@@ -25,7 +25,7 @@ public class ProController {
 
 
 	
-	
+	@Autowired
 	private ProRespository proRepository;
 	
 	
