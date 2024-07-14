@@ -19,10 +19,13 @@ import org.springframework.web.client.RestTemplate;
 
 import com.jspiders.backendpro.entity.Product;
 import com.jspiders.backendpro.repository.ProRespository;
-@CrossOrigin(origin = "*")
+@CrossOrigin(origins = "*")
 @RestController
 public class ProController {
-	@Autowired
+
+
+	
+	
 	private ProRespository proRepository;
 	
 	
